@@ -32,15 +32,20 @@ npm run android
 yarn android
 ```
 
-### For iOS
+[//]: # (### For iOS)
 
-```bash
-# using npm
-npm run ios
+[//]: # (```bash)
 
-# OR using Yarn
-yarn ios
-```
+[//]: # (# using npm)
+
+[//]: # (npm run ios)
+
+[//]: # ()
+[//]: # (# OR using Yarn)
+
+[//]: # (yarn ios)
+
+[//]: # (```)
 
 If everything is set up _correctly_, you should see your new app running in your _Android Emulator_ or _iOS Simulator_ shortly provided you have set up your emulator/simulator correctly.
 
@@ -67,6 +72,18 @@ You've successfully run and modified your React Native App. :partying_face:
 # Troubleshooting
 
 If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
+
+### Metro (Watchman) failing
+
+In case you run into the above failling while booting up the application, run the following commands to reset watchman. 
+
+```bash
+watchman watch-del-all
+
+watchman shutdown-server
+```
+
+The above is to ask for priviledge to be able to work, also could mean a different instance was running and blocking the app from using it.
 
 # Learn More
 

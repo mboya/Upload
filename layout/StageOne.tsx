@@ -1,4 +1,3 @@
-// src/MpesastatementUpload.js
 import React from 'react';
 import {View, Text, TouchableOpacity, Image} from 'react-native';
 import styles from '../assets/styles/styles';
@@ -21,7 +20,7 @@ const StageOne = ({navigation}) => {
           Get access to the marketplace and help lenders see the real you by
           uploading a six month M-Pesa statement
         </Text>
-        <View style={styles.hr}/>
+        <View style={styles.hr} />
         <Text style={styles.infoTitle}>
           Get insights on your spending habits
         </Text>
@@ -29,18 +28,20 @@ const StageOne = ({navigation}) => {
           Kamoa helps you understand your spending and track your finances every
           time you upload a statement
         </Text>
-        <View style={styles.hr}/>
+        <View style={styles.hr} />
         <Text style={styles.infoTitle}>Secure a higher loan limit</Text>
         <Text style={styles.infoText}>
           Users that share more information get access to higher loan limits
           with flexible payments and low interest rates
         </Text>
       </View>
+      <View style={styles.progressContainerText}>
+        <Text style={styles.stepText}>Step 1/3</Text>
+      </View>
       <View style={styles.progressContainer}>
         <View style={styles.progressBar}>
-          <View style={styles.progress}/>
+          <View style={styles.progress} />
         </View>
-        <Text style={styles.stepText}>Step 1/3</Text>
       </View>
       <TouchableOpacity
         style={styles.button}

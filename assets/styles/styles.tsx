@@ -225,6 +225,11 @@ const styles = StyleSheet.create({
     fontSize: 14,
     textDecorationLine: 'underline',
   },
+  congratsText: {
+    fontSize: 32,
+    fontWeight: 'bold',
+    color: '#4CAF50',
+  },
 });
 
 export default styles;

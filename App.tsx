@@ -12,6 +12,8 @@ import {NavigationContainer} from '@react-navigation/native';
 import StageOne from './layout/StageOne';
 import StageTwo from './layout/StageTwo.tsx';
 import StageThree from './layout/StageThree.tsx';
+import Login from './layout/login.tsx';
+import Success from './layout/success.tsx';
 
 const Stack = createStackNavigator();
 
@@ -32,6 +34,16 @@ function App(): React.JSX.Element {
         <Stack.Screen
           name="StageThree"
           component={StageThree}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{headerShown: false}}
+        />
+        <Stack.Screen
+          name="Success"
+          component={Success}
           options={{headerShown: false}}
         />
       </Stack.Navigator>
